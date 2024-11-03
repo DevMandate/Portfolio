@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandate Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d891462cb3.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.PNG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi! I'm <span> Caleb </span> <br> From Kenya</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" >About Me</h1>
+                    <p>A dynamic full-stack developer skilled in building seamless web and mobile applications. I bring ideas to life using HTML, CSS, and Bootstrap for pixel-perfect interfaces, while leveraging JavaScript, Python, and Flask for robust backends. From crafting responsive layouts to developing data-driven solutions, I also dive deep into Data Science and Android development with Kotlin. Passionate about coding excellence, I’m here to deliver digital experiences that engage and inspire!</p>
+
+                    <div class="tag-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span> <br>Web App Development</li>
+                            <li><span>App Development</span> <br>Building Android/iOS apps </li>
+                            <li><span>Data Science</span> <br>Uncover Patterns from Data to make Data-driven Decisions, and drive Meaningful Outcomes</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                       
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-October</span> <br>SPSS & STATA - KESAP Research Center</li>
+                            <li><span>2024-June</span> <br>Kotlin + Android Development - Modcom Institute of Techology</li>
+                            <li><span>2024-August</span> <br> HTML, CSS & Bootstrap, Python, Flask - Modcom Institute of Techology</li>
+                            <li><span>2024-October </span> <br>Data Science - Modcom Institute of Techology</li>
+                        </ul>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I provide web design services that transform ideas into visually appealing, user-focused websites. With an emphasis on responsive layouts and intuitive navigation, I create designs that enhance brand identity and engage visitors. From portfolios to e-commerce platforms, my goal is to deliver a seamless user experience. Let’s build a digital presence that makes a lasting impression!</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I specialize in UI/UX design, crafting visually engaging and user-friendly digital experiences. By combining aesthetics with functionality, I create intuitive interfaces that guide users seamlessly. From user journey mapping to responsive design, my focus is on designs that captivate and retain users. Let's create an experience that truly resonates!</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Design</h2>
+                    <p>I create apps that are easy to navigate and engaging to use. From wireframing to prototyping, each step ensures a seamless, enjoyable user experience. I offer app design services that blend functionality with an intuitive, visually appealing interface. Focusing on user-centered design principles</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/web.jpg" alt="">
+                    <div class="layer">
+                        <h3>Interactive Websites</h3>
+                        <p>I create interactive websites that engage users with dynamic features and seamless navigation. By incorporating animations, responsive layouts, and intuitive elements, I craft experiences that captivate and retain visitors. Each design prioritizes usability and interactivity, making the site both functional and enjoyable. Let's bring your brand to life with a website that truly connects with users!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/datascience.jpg" alt="">
+                    <div class="layer">
+                        <h3>Data Science</h3>
+                        <p>I leverage Data Science to turn complex data into clear, actionable insights. By applying statistical analysis, machine learning, and data visualization, I uncover trends, make predictions, and drive smarter decisions. My approach ensures data isn't just numbers but a strategic asset, transforming raw information into value. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>I design online shopping apps focused on user-friendly navigation, clean layouts, and a smooth shopping experience. From product discovery to secure checkout, each feature enhances convenience and engagement. My goal is to turn browsing into buying and build an app that keeps customers returning.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+
+
+    <!-- Contact  -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>  wafulacaleb233@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone-flip"></i>  +254796-578-077</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CalebWafulaResume.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @ Caleb. Made with <i class="fa-solid fa-heart"></i> by DevMandate</p>
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw6v-ckmDmk1zfU2zS-9_dn1q1aMpmD32WPs3_pwMNVo7M9ZFFSvZG6EnzqP5HFI3G7/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
